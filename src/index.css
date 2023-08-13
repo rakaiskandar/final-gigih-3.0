@@ -23,5 +23,22 @@ body {
   @apply bg-[#525867] border-transparent outline-none py-1 px-2 text-base w-full placeholder:text-sm rounded-md
 }
 
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #525867;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(175, 175, 175);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(150, 150, 150);
+}
+
 
 
