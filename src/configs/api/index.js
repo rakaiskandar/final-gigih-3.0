@@ -1,5 +1,5 @@
 export const api = {
-    BASE_URL: "http://localhost:8000/api",
+    BASE_URL: import.meta.env.BASE_API_URL,
     GET_VIDEOS: '/videos',
     GET_VIDEOS_ID: '/videos/',
     SEARCH_VIDEOS: '/videos/search',
