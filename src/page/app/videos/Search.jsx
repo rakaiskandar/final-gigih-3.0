@@ -47,6 +47,14 @@ function Search() {
                 {!item.video || !item.query ?
                     <>
                         <h2 className="font-bold">Cari video yang kamu ingin tonton!</h2>
+                        { error || "" ? 
+                            <div className="px-5 py-3 flex flex-col justify-center items-center font-bold text-green-500 rounded-md">
+                                Cari Video...
+                            </div> : 
+                            <div className="px-5 py-3 flex flex-col justify-center items-center font-bold text-green-500 rounded-md">
+                                Masukkan Kata Kunci!
+                            </div>
+                        }
                     </>
                     :
                     <>
