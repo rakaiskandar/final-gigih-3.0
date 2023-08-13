@@ -10,7 +10,7 @@ import Skeleton from "react-loading-skeleton";
 function Search() {
     const [queryParams] = useSearchParams();
 
-    const { item, loading } = useFetchData(api.BASE_URL + api.SEARCH_VIDEOS + `?${queryParams}`)
+    const { item, loading, error } = useFetchData(api.BASE_URL + api.SEARCH_VIDEOS + `?${queryParams}`)
 
     if (loading) {
         return (
@@ -50,27 +50,17 @@ function Search() {
                     </>
                     :
                     <>
-                        {item.count !== null || item.query !== "" ?
-                        <>
-                            <h2 className="font-bold">{item.count} Hasil Pencarian dari "{item.query}"</h2>
-                            <VideoGrid>
-                                {item.video && item.video.map((item) => (
-                                    <VideoCard
-                                        key={item._id}
-                                        path={item.videoId}
-                                        img={item.videoThumb}
-                                        title={item.title}
-                                    />
-                                ))}
-                            </VideoGrid>
-                        </>
-                        : 
-                        <>
-                            <div>
-                               Not Found
-                            </div>
-                        </>
-                        }
+                        <h2 className="font-bold">{item.count} Hasil Pencarian dari "{item.query}"</h2>
+                        <VideoGrid>
+                            {item.video && item.video.map((item) => (
+                                <VideoCard
+                                    key={item._id}
+                                    path={item.videoId}
+                                    img={item.videoThumb}
+                                    title={item.title}
+                                />
+                            ))}
+                        </VideoGrid>
                     </>
                 }
             </div>
