@@ -20,9 +20,7 @@ const useFetchData = (url) => {
 
     useEffect(() => {
         setLoading(true);
-        setTimeout(() => {
-            getData();
-        }, 500)
+        getData();
     }, [url]);
 
     return { item, loading, error, getData }
