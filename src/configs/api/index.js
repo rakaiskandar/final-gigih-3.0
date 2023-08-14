@@ -1,5 +1,5 @@
 export const api = {
-    BASE_URL: import.meta.env.BASE_API_URL,
+    BASE_URL: import.meta.env.VITE_BASE_API_URL,
     GET_VIDEOS: '/videos',
     GET_VIDEOS_ID: '/videos/',
     SEARCH_VIDEOS: '/videos/search',
