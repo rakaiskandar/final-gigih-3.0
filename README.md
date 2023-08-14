@@ -90,4 +90,7 @@ Folder structure that used for react project:
 ## Improvement Features
 - Implement user authentication, authorization, multiple role 
 - Implement web socket for real time post comments
-- Implement storage file to upload video (AWS/Firebase) 
+- Implement storage file to upload video (AWS/Firebase)
+
+## Deployment
+This web has been deployed, you can access in https://final-gigih-3-0.vercel.app
