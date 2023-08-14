@@ -7,7 +7,7 @@ function ProductModal({ isOpen, setIsOpen, children }) {
                     onClick={() => setIsOpen(false)}>
                 </div>
                 <div className="flex items-center min-h-screen py-4">
-                    <div className="relative w-full max-w-sm lg:max-w-lg p-3 mx-auto bg-[#525867] overflow-x-scroll rounded-md shadow-lg">
+                    <div className="relative w-full max-w-sm lg:max-w-xl p-3 mx-auto bg-[#28282F] overflow-x-scroll rounded-md shadow-md">
                         { children }
                     </div>
                 </div>
