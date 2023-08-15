@@ -41,6 +41,12 @@ Install dependencies
 npm install
 ```
 
+Create `.env` file 
+
+```bash
+VITE_BASE_API_URL=YOUR_LOCALHOST_API / https://midterm-gigih-3-0.vercel.app/api
+```
+
 Start the server
 
 ```bash
